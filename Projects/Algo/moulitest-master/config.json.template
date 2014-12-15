@@ -1,6 +1,6 @@
 {
     "libft": {
-        "rendu_path": “~/dlevy/Documents/Projects/Algo/libft/,
+        "rendu_path": “~/dlevy/Documents/Projects/Algo/libft/git_libft/,
         "extra_tests": [
             "ft_memdup", "ft_isblank",
             "ft_strrev", "ft_strtrimc", "ft_strcapitalize", "ft_islower",

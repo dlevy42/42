@@ -6,7 +6,7 @@
 #    By: dlevy <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/28 13:51:11 by dlevy             #+#    #+#              #
-#    Updated: 2014/11/28 15:29:28 by dlevy            ###   ########.fr        #
+#    Updated: 2014/12/02 18:08:57 by dlevy            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,13 @@ SRC_O	=	ft_atoi.o				\
 			ft_strtrim.o			\
 			ft_tolower.o			\
 			ft_toupper.o			\
-			ft_strsplit.o
+			ft_strsplit.o			\
+			ft_lstnew.o				\
+			ft_lstdelone.o			\
+			ft_lstdel.o				\
+			ft_lstadd.o				\
+			ft_lstiter.o			\
+			ft_lstmap.o
 
 all: $(NAME)
 
