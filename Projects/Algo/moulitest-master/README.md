@@ -1,60 +1,47 @@
-# Moulitest
+# Moulitest: Test your 42 projects
 
-[![Issue Stats](http://issuestats.com/github/yyang42/moulitest/badge/pr)](http://issuestats.com/github/yyang42/moulitest)
-[![Issue Stats](http://issuestats.com/github/yyang42/moulitest/badge/issue)](http://issuestats.com/github/yyang42/moulitest)
+<img align="right" height="230" src="http://i.imgur.com/3p0Xg7Z.png">
 
-This repository contains tests for several projects done at 42. Please use the tests with caution and check the tests source code.
+This repository contains tests for several projects done at 42.
 
-Correction: A failed test doesn't necessarily mean that the tested code is wrong. The test suite doesn't correct for you, **you are the corrector**.
+Tested 42 projects:
 
-At the moment, the available tests are:
+* libft
+* get_next_line
+* ft_ls
+* ft_printf (in progress)
 
-- libft (58 functions and 25+ other generic functions)
-- get_next_line (with handling of multiples file descriptors)
-- ft_ls
+Feedbacks, github issues and pull requests are welcome.
 
-Feedbacks and pull requests are welcome. You can also raise issues on github directly.
+## Quick Start
+Create the config file
 
-![Sample](http://i.imgur.com/3p0Xg7Z.png)
+	cp config.ini.template config.ini
 
-Install
+Edit the config file
+
+	vim config.ini # add your configs
+
+Run tests
+	
+	make
+
+## Advanced use
+Run only some tests
+
+	make ft_ls tests=<regexp>
+	# e.g. To launch only the test 05 you can use
+	make ft_ls tests=^05
+
+Notes
 ---
+GNL
 
-	$ cp config.json.template config.json
-	# ==> EDIT config.json and replace with your OWN VALUES <==
-
-	# WARNING: Unnecessary trailing commas are not allowed in .json files.
-	# e.g.      ["aaa", "bbb"]  GOOD
-	#           ["aaa", "bbb",] BAD
-
-Usage
----
-
-####Libft
-
-	$ cd libft_tests
-	$ ./test --help
-
-####Get Next Line
-
-	$ cd get_next_line_tests
-	$ ./test
-
-Do not use file descriptor 1 for debugging to avoid conflict with the tests. Use the file descriptor 2 instead. Example:
-
-	write(2, "abc", 3);
-
-**WARNING:** If the tests stop in the middle, it could mean that your get_next_line is waiting for an input from the file descriptor but nothing is coming.
-
-####Ft ls
-
-	$ cd ft_ls_tests
-	$ ./test
+* If the tests stop in the middle, it could mean that your get_next_line is waiting for an input from the file descriptor but nothing is coming.
 
 Credits
 ---
 
-The test framework and many libft tests are based on the work done by Maxime Bacoux (mbacoux)
-Here is the original repository: https://github.com/Nax/libft-test
-
-Other interesting tests have also been included for convenience: Mouli-nator and Qperez test suite.
+The test framework and many libft tests are based on the work done by Maxime Bacoux (mbacoux). 
+Here is the original repository: https://github.com/Nax/libft-test.  
+Thanks to [lefta](https://github.com/lefta) (aka celegran) for his work, especially on the v2.
