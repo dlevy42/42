@@ -1,13 +1,27 @@
-#include <testframework.h>
+#include <unistd.h>
+#include <string.h>
+#include <fw.h>
+#include <mt.h>
+#include <test.h>
+#include <signal.h>
 #include <locale.h>
+#include "project.h"
+
+# define MT_ADD_PROTO(name)			void suite_ ## name(t_suite *suite)
+
 
 PROTOTYPES
 
-int	main(void)
+
+int main()
 {
+	t_mt	*mt = mt_create("ft_printf");
+
+	setbuf(stdout, NULL);
+	setlocale(LC_ALL, "en_US.UTF-8");
+
 	ADD_TESTS
-	if (setlocale(LC_ALL, "") == NULL)
-		printf("\033[31m/!\\ Failed to set locale. Test 40 will break. /!\\\033[m\n");
-	ut_run_all_tests();
-	return (0);
+
+	mt_exec(mt);
+	return(0);
 }

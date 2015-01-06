@@ -1,0 +1,68 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes() ?>>\
+<head profile="http://gmpg.org/xfn/11">\
+\
+<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />\
+<meta name="description" content="" />\
+<meta name="keywords" content="" />\
+<title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?></title>\
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" type="text/css" media="screen" />\
+\
+	<!--[if lte IE 6]><script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/supersleight-min.js"></script><![endif]-->\
+<?php wp_enqueue_script(get_bloginfo('template_directory').'/js/jquery.js'); ?>\
+<?php wp_enqueue_script('superfish', get_bloginfo('template_directory').'/js/superfish.js', array('jquery'), '1.7'); ?>\
+<?php wp_enqueue_script(get_bloginfo('template_directory').'/js/nav.js'); ?>\
+<?php if (trim(get_option('ft_header_code')) <> "") \{ echo stripslashes(get_option('ft_header_code')); \} ?>\
+<?php if (is_singular()) wp_enqueue_script('comment-reply'); ?>\
+\
+<?php wp_head(); ?> <!-- #NE PAS SUPPRIMER cf. codex wp_head() -->\
+</head>\
+\
+<!-- <body <?php body_class() ?>>\
+	<div class="header">\
+		<div id="logo"src=>\
+			<a href="<?php echo get_option('home'); ?>"> <p><a href="#"></a></p> </a>\
+		</div>\
+	 	<div class="nav">\
+	 		<ul>\
+	 			<li><a href="#">Inscription</a></li>\
+	 			<li><a href="#"><form method="post" action="http://www.NOM_DU_SITE.com/wp-login.php" id="loginform" name="loginform">\
+ <p>\
+  <label for="user_login">Identifiant</label>\
+  <input type="text" tabindex="10" size="20" value="" id="user_login" name="log">\
+  </p>\
+  <p>\
+  <label for="user_pass">Mot de passe</label>\
+  <input type="password" tabindex="20" size="20" value="" id="user_pass" name="pwd">\
+  </p>\
+ <p><label><input type="checkbox" tabindex="90" value="forever" id="rememberme" name="rememberme">\
+  Rester connecter</label>\
+  | <a href="http://www.NOM_DU_SITE.com/wp-login.php?action=lostpassword">Mot de passe oubli\'e9</a></p>\
+  <p>\
+  <input type="submit" tabindex="100" value="Se connecter" id="wp-submit" name="wp-submit">\
+  <input type="hidden" value="http://www.NOM_DU_SITE.com/" name="redirect_to">\
+  </p>\
+\
+ </form></a></li>\
+	 			<li><a href="#">Aide</a></li>\
+	 			<li id="annonce"><a href="#">Publiez votre annoce</a></li>\
+	 		</ul>\
+	 	</div>\
+	 	\
+	 	<div class="whome">\
+	 	<p>.</p> <!-- a supprimer une fois termin\'e9 -->\
+	 		<h1>Bienvenue \'e0 la maison</h1>\
+	 		<p>Louez des logements uniques aupr\'e8s d'h\'f4tes locaux dans 190+ pays.</p>\
+	 		<div class="mdp">\
+	 			<p>Mode d'emploi</p>\
+	 		</div>\
+	 	</div>\
+	</div>\
+</div><!--  #header --> \
+-->}

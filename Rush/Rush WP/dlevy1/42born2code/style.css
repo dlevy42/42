@@ -1,0 +1,266 @@
+/*
+Theme Name: 42borntocode
+Theme URI: http://42.fr/
+Author: Kcohen
+Author URI: https://intra.42.fr/user/kcohen
+Description: Theme 42borntocode
+Version: 1.0
+*/
+
+/* import stylesheets and hide from ie/mac \*/
+@import url("css/master.css");
+/* end import/hide */
+
+/***** General ********************/
+
+/***************************************HEADER !ACCEUIL***************************/
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+
+.menu{
+	color: white;
+	font-size: 11px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+}
+
+.menu a:hover{
+	color: black;
+	font-size: 14px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+}
+
+.menu ul ul {
+	display: none; 
+	position: absolute; 
+	left: 80px; 
+	top: 0px; 
+	margin: 0px; 
+	padding: 0px;
+}
+
+.menu li { 
+	list-style-type: none; 
+	position: relative; 
+	width: 80px; 
+}
+
+li:hover ul.niveau2, li li:hover ul.niveau3 a{
+	display: block
+
+}
+
+.menu {
+	margin-top: 24px;
+	margin-left: 120px;
+}
+
+
+
+
+/***************************************HEADER ACCEUIL*************************************/
+
+.btn.btn-default {
+  background: #007A87;
+  border-color: #007A87;
+}
+
+.btn.btn-default:hover{
+  background: #009AAB;
+  border-color: #009AAB;
+}
+
+.btn.btn-success {
+  background: rgba(255, 255, 255, .6);
+  border-color: rgba(255, 255, 255, .6);
+  width: 156px;
+  height: 45px;
+  padding-top: 12px; 
+}
+
+.btn.btn-success:hover{
+  background: rgba(0, 0, 0, .4);
+  border-color: rgba(0, 0, 0, .4);
+}
+
+#logo {
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 20px;
+}
+
+#logo > a {
+  width: 150px;
+  height: 50px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAgCAMAAADXAP0hAAAAtFBMVEUAAAD%2FXGH%2FXGH%2FVVf%2FVFr%2FXWL%2FWl%2F%2FTVH%2FAAD%2FdHT%2Fuv%2F%2FV1v%2FV1v%2FXWH%2FXGL%2FXGH%2FWFv%2FWl7%2FXGD%2FXWH%2FXWL%2FXGH%2FXGL%2FXWH%2FW2D%2FXGH%2FW2D%2FXGD%2FVFn%2FXWL%2FW2H%2FW2D%2FXGH%2FXWL%2FW2D%2FXGD%2FW2H%2FXGH%2FXGH%2FXGH%2FXGH%2FV13%2FXGH%2FXGH%2FXGD%2FXGH%2FWmD%2FXGH%2FXWL%2BWl%2F%2FW2D%2FXGH%2FYGX%2FX2T%2FXmP%2FWmD%2FY2n%2FZWv%2FYmf%2FXmSk3u%2FvAAAAM3RSTlMAceIIBcr7AwECAREW0z3uGyZY3dnGwFI56IOaDM9d%2BPRCd2F8T2tJaB%2BhrouzMLmoNZMHw7g%2BAAAE4klEQVRIx7VWaXeiMBS9QiCgIuIubljrWqudJiTA%2FP%2F%2FNY9Aa6dT58OcTjzGJPcl15u3nOC9%2BeC7UWi9dGj0%2F5qP1jXLtMpFAxz%2Frfl4ya3DZTJTcvv%2FeDjGMpmUo3MRzOH9zdbzPo69e7ZfIszJYtg%2Bgx1kf702zyfp%2FyxmKa1WKYJhWfTL0f3WZmi%2BjefdbutrK%2FtPxIO9yB7AzZA55fCuGH4OnajWw7BLktevxDH0kuSE5qfFzbsEjp602vfkcGwLN3uCX88aUp7Av6LZSPkM%2F7OYm0M8Nswfwe%2BGSuG%2B72dopGr2Nc1SiSc0P1FnAxLj%2BYz5Rs60fbOouRlnnk9f9iKsCRjn4Mwmmp8z2ARWN1GuEuSXNKl6AqPmfRSzA5kYUyL6LOf3yfEWAiXN6TcTr5oYmucauXmGxHCwyXgf0fwP7%2Fho9%2BLz0o72%2BzYm63ULnf3a68Sv3Z2Ur%2FbuHG%2FntN%2Fv7CdYx%2BdDZNT8fJlvznGPTq7FOFmDgL2jsiw5dcFJzgPYB98dpmkq5XAgizEWhVzDKlbXVZpvN4V2Apmm6WCL5nyQhVchU5k0QBmig4UkyFrCx1umNMlnhfU8WuWDLtArTBa9iX4stJYqldpVYzhCdzAQrpQiIxqXzlWpFukS80BoWlVaFzuKNFcbRMtGdWlDShR0Q%2FnaAn4E%2BQw%2BM%2FreWDrKFYOHbaMv3JRolChp9PRx3WvvpCucwzieah0eeWBWx4EWCywJCXbbR0vonxcTouSJJg7ZCHQ%2BJiLsovKW91ZUU%2BGUGd3ta3Wj2ZsQkGJU%2Fp3I0jKmVTEG6AgdtpdSLMymQKez8pQrxZWNV%2BMOj7NFOqFrDrJDJcfDnHbvy6jFVd1o3AtMQNMZNrdxSIkvEGICu9m2xOrYqwLaxjjVAxKzl9Mu%2Fcxyc00ed2SHWHfZwjZymjiGIozKuuyNxAeaH6S9CmgOHx2hHHshCGIoabo9SQHdpM9lpRMyec7PxIqHvExnjw51Ixq0%2BkWvLnLtqUguoOT8kobUsDJMlXDs4HeaJ3CPl1c4BfVJBJ9jnZZVjXImc5gHTrQjvwkYfSKNTfW%2Fo8YjuxeVvvDgsxoQ8krXCZxqFeSNDXjlKUZwdyr3Rg6jeF6JhxafP7pu%2BplG6nBj8%2B6rcuUYg99o3FVjztsxhf4BUSLI3hTbLJj72MrwWM3PuSnE5h9IV02HfUV5s8VQGJpVTbMSYuCEalU8gy7NrWmSkkar%2FnBK%2FA5D%2FOGwLEar7JgJ4yhZXQzEEQ2kEKkUWmU9BFUVUBP45dUqTfkpRDFqY94nqKQJC3FcviOLIxDUnqZum4r1OX97Cfh4yndgFdSKF2EYbOLhqIPZaHTxXkZX49HecNho9MOp02Ak7jS6XkprQtvr4fDxMAini8ey3LlJVNdbiukiXKl1xYq32KsowY4Rw502j7qcjL5Ejswgmmi8%2BiXCFkK9l0yGnaGpsEpw9Vi5debXrzHcVsmu7Jo3pC%2F3dbYzXCylThy8Fne6lWmz6e4zhKD7SAXNKAQ87nMOrKfZ0Mqf52DM5wxRKCbf9tCNkjQ2A9ZYZVd7HWaLiZkfHfOy%2BK52kPLam3R2TiFnDLgMcnEaTzoPVtY%2Ffh%2BNj02YZ0LlWX9DMwr6mUvzNC%2BGEfh3vtGP8dAaPB9aJiY4CTqX8yX7RpZfNJqfg2JAld4AAAAASUVORK5CYII%3D) 0 0 no-repeat;
+  display: block;
+  text-indent: -5000px;
+}
+
+.nav a {
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('http://www.statesmantravel.com/Media/Default/BlogPost/Blog/bigstock-View-on-Eiffel-Tower-Paris-F-36479032.jpg');
+  height: 570px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 75%;
+  position: relative;
+}
+
+.jumbotron h1 {
+  color: black;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+} 
+
+.jumbotron > .container {
+  position: relative;
+  top: 57px;
+  text-align: center;
+}
+
+.jumbotron > .container h1{
+  font-size: 58px; 
+  margin-bottom: 5px;  
+}
+
+.jumbotron > .container p{
+  font-size: 17px; 
+}
+
+.block {
+  background: rgba(0, 0,0,.6);
+  position: absolute;
+  bottom: 0;
+  width:100%;
+}
+
+.input-group {
+	width: 800px;
+}
+
+
+/*---------------City----------------*/
+
+
+body{
+	background-color: #EDEFED;
+}
+.justwe{
+    color: white;
+    border-bottom: 15px solid black; /*????????????*/
+}
+
+.justwe .container {
+	text-align: center;
+}
+
+.we h2{
+    color: #565A5C;
+    font-size: 24px;
+}
+
+
+.we p{
+	color: #565A5C;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.we {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 17px;
+	margin-bottom: 50px;
+}
+
+.img-thumbnail{
+  background: #EDEFED;
+  border-color: #EDEFED;
+}
+.img-thumbnail:hover{
+  background: rgba(0, 0,0,.6);
+  border-color: rgba(0, 0,0,.6);
+}
+
+
+/********************Footer*****************/
+
+.footer-main {
+    padding: 50px 0 50px 0;
+    background-image: url("images/footer.png");
+    background-color: #2d2d2e;
+}
+
+.bar {
+	margin: 50px auto 25px auto;
+	width: 695px;
+	border-top: 1px solid #dce0e0;
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-title {
+	text-align: center;
+	font-family: sans-serif;
+	color: #ffffff;
+}
+
+.footer-cop {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #565A69;
+}
+
+.social-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.circle
+{
+display: block;
+height: 36px;
+width: 36px;
+border-width: 1px;
+border-style: solid;
+border-radius: 50%;
+text-align: center;
+}
+
+.textwidget{
+	color: #2B2D2E;
+}
+
+
+
+
+
+
+
+
+
+
